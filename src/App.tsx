@@ -6,19 +6,21 @@ import {Works} from "./layout/sections/works/Works.tsx";
 import {Testimony} from "./layout/sections/testimony/Testimony.tsx";
 import {Contact} from "./layout/sections/contacts/Contacts.tsx";
 import {Slogan} from "./layout/sections/slogan/Slogan.tsx";
+import {Footer} from "./layout/footer/Footer.tsx";
 
 function App() {
     return (
         <div className="App">
-            <Header />
-            <Main />
+            <Header/>
+            <Main/>
             <Skills/>
-            <Works />
-            <Testimony />
-            <Contact />
+            <Works/>
+            <Testimony/>
+            <Contact/>
             <Slogan/>
+            <Footer/>
         </div>
-    )
+    );
 }
 
 export default App
