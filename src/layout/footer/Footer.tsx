@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import {Icon} from "../../components/icon/Icon.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
+import {theme} from "../../styles/Theme.ts";
 
 
 export const Footer = () => {
     return (
         <StyledFooter>
             <FlexWrapper direction={"column"} align={"center"}>
-                <Name>Svetlana</Name>
+                <Name>Evgeniy</Name>
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
@@ -35,26 +36,53 @@ export const Footer = () => {
 
 
                 </SocialList>
-                <Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</Copyright>
+                <Copyright>© 2025 Evgeniy Kovalev, All Rights Reserved.</Copyright>
             </FlexWrapper>
         </StyledFooter>
     );
 };
 
 const StyledFooter = styled.footer`
-    background-color: rgba(195,185,44,0.82) ;
-    min-height: 20vh;
+    background-color: ${theme.colors.primaryBg};
+    padding: 40px 0;
+`;
+const Name = styled.span`
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+
 `
-const Name = styled.span``
 const SocialList = styled.ul`
     display: flex;
-    flex-direction: row;
+    gap: 20px;
+    margin: 30px 0;
+    
+`
+const SocialLink = styled.a`
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+
+    color: ${theme.colors.accent};
+    
+    &:hover {
+        color: ${theme.colors.primaryBg};
+        transform: translateY(-4px);
+    }
 `
-const SocialLink = styled.a``
-const Copyright = styled.small``
+const Copyright = styled.small`
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: ${theme.colors.font};
+    opacity: 0.5;
+`
 const SocialItem = styled.li`
     
 `
