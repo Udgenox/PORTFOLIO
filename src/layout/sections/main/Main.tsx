@@ -42,14 +42,8 @@ const StyledMain = styled.section`
 `
 
 const MainTitle = styled.h1`
-    li
     font-weight: 400;
-    font-style: Regular;
     font-size: 27px;
-    leading-trim: NONE;
-    line-height: 100%;
-    letter-spacing: 0%;
-
 `
 
 const Name = styled.h2`

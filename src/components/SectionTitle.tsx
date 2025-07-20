@@ -4,7 +4,6 @@ import {theme} from "../styles/Theme.ts";
 export const SectionTitle = styled.h2`
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 36px;
     letter-spacing: 5px;
@@ -14,15 +13,14 @@ export const SectionTitle = styled.h2`
     
     &::before {
         content: '';
-        display: block;
+        display: inline-block;
         width: 55px;
         height: 1px;
         background-color: ${theme.colors.accent};
         
         position: absolute;
         left: 50%;
+        bottom: -30px;
         transform: translateX(-50%);
-        ma
-        
     }
 `;

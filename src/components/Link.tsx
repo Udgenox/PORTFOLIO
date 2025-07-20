@@ -2,34 +2,32 @@ import styled from "styled-components";
 import {theme} from "../styles/Theme.ts";
 
 
-export const Button = styled.button`
+export const Link = styled.a`
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    height: 32px;
-    width: 170px;
+    padding: 10px;
     position: relative;
     z-index: 0;
     
     &:hover {
-        &::before {
-            height: 100%;
-            width: 100%;
+        &::before{
+            height: 10px;
         }
     }
 
-    
     &::before {
         content: "";
         display: inline-block;
-        height: 10px;
-        width: 50%;
+        //height: 10px;
         background-color: ${theme.colors.accent};
-        
+
         position: absolute;
-        bottom: 0;
-        left: 50%;
+        bottom: 5px;
+        left: 0 ;
+        right: 0 ;
         z-index: -1;
-        transform: translateX(-50%);
+
+    }
 `

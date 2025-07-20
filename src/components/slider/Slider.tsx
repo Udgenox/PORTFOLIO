@@ -40,7 +40,7 @@ const Name = styled.span`
 `
 
 const Pagination = styled.div`
-    div {
+    span {
         display: inline-block;
         width: 10px;
         height: 10px;
