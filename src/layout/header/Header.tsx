@@ -4,7 +4,7 @@ import {Logo} from "../../components/logo/logo.tsx";
 import {Container} from "../../components/Container.ts";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {HeaderMenu} from "./headerMenu/HeaderMenu.tsx";
-import {MobileMenu} from "./mobileMenu/mobileMenu.tsx";
+import {MobileMenu} from "./mobileMenu/MobileMenu.tsx";
 
 const items =['Home', 'Skills', 'Works', 'Testimony', 'Contact'];
 
