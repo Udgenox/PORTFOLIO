@@ -4,6 +4,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme.ts";
 import {font} from "../../../styles/Common.ts";
+import Typewriter from 'typewriter-effect';
 
 
 
@@ -15,7 +16,18 @@ export const Main = () => {
                     <div>
                         <SmallText>Hi there</SmallText>
                         <Name>I am <span>Evgeniy Kovalev</span> </Name>
-                        <MainTitle>A Web Developer.</MainTitle>
+                        {/*<MainTitle>A Web Developer.</MainTitle>*/}
+                        <MainTitle>
+                            <p>A Web Developer.</p>
+                            <Typewriter
+                                options={{
+                                    strings: ['A Web Developer', 'A Frontend Developer', 'A Python Programming'],
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 40
+                                }}
+                                />
+                        </MainTitle>
                     </div>
                     <PhotoWrapper>
                         <Photo src={photo} alt=""/>
@@ -51,7 +63,11 @@ const StyledMain = styled.section`
 const MainTitle = styled.h1`
     //font-weight: 400;
     //font-size: 27px;
-    ${font({weight: 400, Fmax: 27, Fmin:20})}
+    ${font({weight: 400, Fmax: 27, Fmin:20})};
+    
+    p {
+        display: none;
+    }
     
     
 `
