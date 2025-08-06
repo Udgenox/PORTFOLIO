@@ -28,5 +28,7 @@ export const Skills = () => {
 export default Skills;
 
 
-const StyledSkills = styled.section``
+const StyledSkills = styled.section`
+    position: relative;
+`
 

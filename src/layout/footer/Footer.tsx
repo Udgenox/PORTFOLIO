@@ -46,6 +46,7 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
     background-color: ${theme.colors.primaryBg};
     padding: 40px 0;
+    position: relative;
 `;
 const Name = styled.span`
     ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 22, Fmin: 16})}
