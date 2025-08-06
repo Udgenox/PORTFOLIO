@@ -24,9 +24,9 @@ export const Main = () => {
                                     strings: ['A Web Developer', 'A Frontend Developer', 'A Python Programming'],
                                     autoStart: true,
                                     loop: true,
-                                    delay: 40
+                                    delay: 40,
                                 }}
-                                />
+                            />
                         </MainTitle>
                     </div>
                     <PhotoWrapper>
