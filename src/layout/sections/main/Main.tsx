@@ -5,6 +5,7 @@ import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme.ts";
 import {font} from "../../../styles/Common.ts";
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt'
 
 
 
@@ -16,7 +17,6 @@ export const Main = () => {
                     <div>
                         <SmallText>Hi there</SmallText>
                         <Name>I am <span>Evgeniy Kovalev</span> </Name>
-                        {/*<MainTitle>A Web Developer.</MainTitle>*/}
                         <MainTitle>
                             <p>A Web Developer.</p>
                             <Typewriter
@@ -29,10 +29,19 @@ export const Main = () => {
                             />
                         </MainTitle>
                     </div>
-                    <PhotoWrapper>
-                        <Photo src={photo} alt=""/>
-                    </PhotoWrapper>
-
+                    <Tilt
+                        className="parallax-effect-img"
+                        tiltMaxAngleX={40}
+                        tiltMaxAngleY={40}
+                        perspective={800}
+                        transitionSpeed={1500}
+                        scale={1.1}
+                        gyroscope={true}
+                        >
+                        <PhotoWrapper>
+                            <Photo src={photo} alt=""/>
+                        </PhotoWrapper>
+                    </Tilt>
                 </FlexWrapper>
             </Container>
 
