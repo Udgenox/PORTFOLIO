@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import {Tabmenu, TabsStatusType} from "./tabmenu/Tabmenu.tsx";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
@@ -7,6 +6,7 @@ import socialImg from "../../../assets/images/social.png";
 import timeImg from "../../../assets/images/timeline.png";
 import {Container} from "../../../components/Container.ts";
 import {useState} from "react";
+import {S} from './Works_Styles.ts'
 
 
 const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
@@ -66,7 +66,7 @@ export const Works = () => {
     }
 
     return (
-        <StyledWorks>
+        <S.Works>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <Tabmenu tabsItems={tabsItems}
@@ -80,14 +80,8 @@ export const Works = () => {
                     })}
                 </FlexWrapper>
             </Container>
-        </StyledWorks>
+        </S.Works>
     );
 };
 
-const StyledWorks = styled.section`
-    ${FlexWrapper} {
-        gap: 30px;
-    }
 
-    position: relative;
-`
