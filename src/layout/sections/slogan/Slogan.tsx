@@ -5,11 +5,11 @@ import {Container} from "../../../components/Container.ts";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 
 
-export const Slogan = () => {
+export const Slogan : React.FC  = () => {
     return (
         <StyledSlogan>
             <Container>
-                <FlexWrapper direction="column" align={"center"}>
+                <FlexWrapper direction={"column"} align={"center"}>
                     <SectionTitle> I Am Available for Freelance</SectionTitle>
                     <Button>Hire me</Button>
                 </FlexWrapper>
