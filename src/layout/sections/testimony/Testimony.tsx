@@ -7,7 +7,7 @@ import {IconWrapper} from "../skills/skill/Skill.tsx";
 import {Container} from "../../../components/Container.ts";
 
 
-export const Testimony = () => {
+export const Testimony : React.FC = () => {
     return (
         <StyledTestimony>
             <Container>
