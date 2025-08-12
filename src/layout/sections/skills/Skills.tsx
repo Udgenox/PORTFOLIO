@@ -1,6 +1,6 @@
 
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
-import {SectionTitle} from "../../../components/SectionTitle.tsx";
+import {SectionTitle} from "../../../components/SectionTitle.ts";
 import {Skill} from "./skill/Skill.tsx";
 import {Container} from "../../../components/Container.ts";
 import styled from "styled-components";
@@ -50,7 +50,7 @@ const skillData = [
 
 export const Skills = () => {
     return (
-        <StyledSkills>
+        <StyledSkills id={'skills'}>
             <Container>
                 <SectionTitle>My Skills</SectionTitle>
                 <FlexWrapper wrap={'wrap'} justify={'space-between'}>

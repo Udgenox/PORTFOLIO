@@ -4,10 +4,10 @@ import {S} from "./../HeaderMenu_Styles"
 
 
 
-export const DeskopMenu: React.FC<{menuItems: Array<string>}> = (props: {menuItems: Array<string>}) => {
+export const DeskopMenu: React.FC = () => {
     return (
         <S.DeskopMenu>
-            <Menu menuItems={props.menuItems}/>
+            <Menu />
         </S.DeskopMenu>
     );
 };

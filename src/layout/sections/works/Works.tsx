@@ -1,4 +1,4 @@
-import {SectionTitle} from "../../../components/SectionTitle.tsx";
+import {SectionTitle} from "../../../components/SectionTitle.ts";
 import {Tabmenu, TabsStatusType} from "./tabmenu/Tabmenu.tsx";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Work} from "./work/Work.tsx";
@@ -66,7 +66,7 @@ export const Works = () => {
     }
 
     return (
-        <S.Works>
+        <S.Works id={'works'}>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <Tabmenu tabsItems={tabsItems}

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link} from "../../../../components/Link.tsx";
+import {Link} from "../../../../components/Link.ts";
 
 export type TabsStatusType = "all" | "landing" | "react" | "spa"
 
