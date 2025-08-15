@@ -11,7 +11,6 @@ const Slider = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
 `
 
 const Slide = styled.div`
